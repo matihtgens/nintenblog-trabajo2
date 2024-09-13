@@ -1,104 +1,219 @@
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  #fondoIndex{
-    background-image: url("./img/maario.jpg");
-    background-size: 25%;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 
-  #fondoContact{
-    background-image: url("./img/kirby.jpg");
-    background-size: 25%;
-  }
-  #fondoAbout{
-    background-image: url("./img/pika.jpg");
-    background-size: 25%;
-  }
+#fondoIndex {
+  background-image: url("./img/maario.jpg");
+  background-size: 25%;
+}
 
-  #pika{
-    border-radius: 15px;
-  }
+#fondoIndex p {
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.4);
+}
 
-  .divBody{
-    background-color: rgba(255, 255, 255, 0.75); /* Color blanco con 50% de opacidad */
-  }
+#fondoContact {
+  background-image: url("./img/kirby.jpg");
+  background-size: 25%;
+}
 
-  img{
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
-    margin-bottom: 20px;
-  }
+#fondoAbout {
+  background-image: url("./img/pika.jpg");
+  background-size: 25%;
+}
+
+#pika {
+  border-radius: 15px;
+}
+
+.divBody {
+  background-color: rgba(255, 255, 255, 0.75);
+  /* Color blanco con 50% de opacidad */
+}
+
+.transparencia {
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
+#fondoIndex img {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  margin-bottom: 20px;
+  border-radius: 2%;
+}
+
+#fondoContact img {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  margin-bottom: 20px;
+  border-radius: 2%;
   
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-  }
+}
+
+#fondoAbout img {
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  margin-bottom: 20px;
+  border-radius: 2%;
+}
+
+#contForm {
+  /* Margen */
+  /* Arriba Derecha Abajo Izquierda (Cuando tiene 4 parametros*/
+  /* Arriba/Abajo y Izuierda/derecha (Cuando tiene 2 parametros)*/
+  margin: 2% 5%;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+  /*
+    Fondo con un degrade de colores
+    background-image: linear-gradient(to top right, blue, red, yellow);
+    */
+  background-color: rgba(217, 255, 0, 0.7);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  cursor: url('/img/cursor.png'), auto;
+}
+
+button:hover,
+a:hover,
+input:hover {
+  cursor: url('/img/cursor2.png'), auto;
+}
+
+/* 
+  Uno puede agregar animaciones con transform y transition.
   
-  nav {
-    font-family:'Press Start 2P', cursive;
-    background-color: #ffcc00;
-    padding: 10px;
+  button:hover{
+    transform:translate(100px,-50px);
+    transition: 1s;
   }
-  
-  .nav-link {
-    color: #df1414;
-  }
-  
-  .nav-link:hover {
-    color: rgb(0, 0, 0);
-  }
-  
-  .container {
-    flex: 1;
-  }
-  
-  .game-title {
-    font-family: 'Abril Fatface', cursive;
-    color: #e60012;
-    font-size: 5rem;
-  }
-  
-  h3 {
-    color: #0073cf;
-  }
-  
-  .promo-section {
-    margin-top: 40px;
-  }
-  
-  .promo-description {
-    font-size: 1.2rem;
-    color: #333;
-    margin-top: 20px;
-  }
-  
-  footer {
-    margin-top: auto;
-  }
-  
-  footer .social-icons a {
-    font-size: 1.2rem;
-    color: #0073cf;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer .social-icons a:hover {
-    color: #e60012;
-  }
-  
-  .bg-light {
-    background-color: #eee12f !important;
-  }
-  .marioHugo{
-    width: 100%;
-    height: auto;
-  }
-  
-  .secAbout{
-    margin: 10px;
-    text-align: center;
-    background: lightgrey;
-  }
+  */
+
+nav {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #ffcc00;
+  padding: 10px;
+}
+
+.tituloForm {
+  font-family: 'Press Start 2P', cursive;
+  padding: 20px 0;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: #df1414;
+}
+
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  flex: 1;
+}
+
+.game-title {
+  font-family: 'Abril Fatface', cursive;
+  color: #e60012;
+  font-size: 5rem;
+}
+
+.shadowRed {
+  text-shadow: 2px 3px 4px rgba(255, 0, 0, 0.5);
+}
+
+h3 {
+  color: #eb0b0b;
+}
+
+.promo-section {
+  margin-top: 40px;
+}
+
+.promo-description {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+#divPokemonsito {
+  text-align: center;
+}
+
+.imgPoke {
+  width: 100%;
+  height: auto;
+}
+
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+
+footer .social-icons a {
+  font-size: 1.2rem;
+  color: rgb(158, 6, 18);
+  text-decoration: none;
+  margin: 0 10px;
+  font-family: 'Abril Fatface', cursive;
+
+}
+
+footer .social-icons a:hover {
+  color: #e60012;
+}
+
+.bg-light {
+  background-color: #eee12f !important;
+}
+
+.pokemonsito {
+  width: 100%;
+  height: 100%;
+}
+
+.secAbout {
+  text-align: center;
+}
+
+.divAbout {
+  max-width: 80%;
+}
+
+.titleabout {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  color: #e60012;
+  font-size: 5rem;
+}
+
+.p {
+  color: red;
+}
+
+form,
+.tituloForm,
+.text {
+  font-family: 'Press Start 2P', cursive;
+}
+
+#carouselExampleIndicators {
+  height: 80%;
+  width: 80%;
+}
+
+.carousel-item img{
+  border: black solid 1px;
+  border-radius: 80px !important;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7) !important; 
+}
+
+ 
