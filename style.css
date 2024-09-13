@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  #fondoIndex{
+    background-image: url("./img/maario.jpg");
+    background-size: 25%;
+  }
+
+  #fondoContact{
+    background-image: url("./img/kirby.jpg");
+    background-size: 25%;
+  }
+  #fondoAbout{
+    background-image: url("./img/pika.jpg");
+    background-size: 25%;
+  }
+
+  #pika{
+    border-radius: 15px;
+  }
+
+  .divBody{
+    background-color: rgba(255, 255, 255, 0.75); /* Color blanco con 50% de opacidad */
+  }
+
+  img{
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    margin-bottom: 20px;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav {
+    font-family:'Press Start 2P', cursive;
+    background-color: #ffcc00;
+    padding: 10px;
+  }
+  
+  .nav-link {
+    color: #df1414;
+  }
+  
+  .nav-link:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .container {
+    flex: 1;
+  }
+  
+  .game-title {
+    font-family: 'Abril Fatface', cursive;
+    color: #e60012;
+    font-size: 5rem;
+  }
+  
+  h3 {
+    color: #0073cf;
+  }
+  
+  .promo-section {
+    margin-top: 40px;
+  }
+  
+  .promo-description {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  
+  footer .social-icons a {
+    font-size: 1.2rem;
+    color: #0073cf;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .social-icons a:hover {
+    color: #e60012;
+  }
+  
+  .bg-light {
+    background-color: #eee12f !important;
+  }
+  .marioHugo{
+    width: 100%;
+    height: auto;
+  }
+  
+  .secAbout{
+    margin: 10px;
+    text-align: center;
+    background: lightgrey;
+  }
